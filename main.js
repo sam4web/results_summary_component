@@ -16,7 +16,32 @@ const statsItem = ({ category, color, score, icon }) =>
   </div>`;
 
 const statsContainer = document.querySelector('#stats-container');
-import statsData from '../data/data.json';
+const statsData = [
+  {
+    category: 'Reaction',
+    color: 'light-red',
+    score: 80,
+    icon: './assets/icon-reaction.svg',
+  },
+  {
+    category: 'Memory',
+    color: 'orangey-yellow',
+    score: 92,
+    icon: './assets/icon-memory.svg',
+  },
+  {
+    category: 'Verbal',
+    color: 'green-teal',
+    score: 61,
+    icon: './assets/icon-verbal.svg',
+  },
+  {
+    category: 'Visual',
+    color: 'cobalt-blue',
+    score: 72,
+    icon: './assets/icon-visual.svg',
+  },
+];
 
 statsData.forEach((stats) => {
   statsContainer.innerHTML += statsItem({ ...stats });
