@@ -26,8 +26,8 @@ Users should be able to:
 
 #### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution : [Solution URL](https://www.frontendmentor.io/solutions/results-summary-component-YOXnHJfDUd)
+- Live Site : [Live Site URL](https://sam4web.github.io/results_summary_component/)
 
 ### Built with
 
