@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Results summary component</title>
+    <!-- <link href="./styles/output.css" rel="stylesheet" /> -->
+    <link href="./styles/index.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'light-red': 'hsl(0, 100%, 67%)',
+              'orangey-yellow': 'hsl(39, 100%, 56%)',
+              'green-teal': 'hsl(166, 100%, 37%)',
+              'cobalt-blue': 'hsl(234, 85%, 45%)',
+
+              white: 'hsl(0, 0%, 100%)',
+              'pale-blue': 'hsl(221, 100%, 96%)',
+              'light-lavender': 'hsl(241, 100%, 89%)',
+              'dark-gray-blue': 'hsl(224, 30%, 27%)',
+
+              'persian-blue': 'hsla(241, 72%, 46%, 0)',
+            },
+            fontFamily: {
+              hanken: ['Hanken Grotesk', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body>
+    <div
+      id="page-wrapper"
+      class="w-full md:h-screen h-fit flex justify-center items-center relative"
+    >
+      <section
+        id="card-component-container"
+        class="rounded-[2.3rem] max-w-4xl w-full card-shadow flex md:flex-row flex-col"
+      >
+        <div
+          class="card-gradient-bg md:rounded-[inherit] rounded-b-[inherit] text-center py-11 px-10 md:px-14 flex gap-8 flex-col flex-1"
+        >
+          <h4 class="font-bold text-light-lavender font-hanken text-2xl">
+            Your Result
+          </h4>
+          <div
+            class="circle-gradient-bg flex w-[195px] h-[195px] mx-auto justify-center flex-col rounded-full"
+          >
+            <h2 class="text-white font-hanken text-7xl font-bold">76</h2>
+            <p class="text-light-lavender font-hanken font-normal text-lg">
+              of 100
+            </p>
+          </div>
+          <!-- /gradient-circle -->
+          <h3 class="font-bold text-white font-hanken text-[1.9rem]">Great</h3>
+          <p
+            class="text-light-lavender font-medium text-lg md:max-w-[280px] w-full mx-auto"
+          >
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+        <!-- /card-left-container -->
+
+        <div
+          class="bg-white rounded-none md:rounded-[inherit] py-11 px-8 md:px-10 flex flex-col flex-1 justify-between"
+        >
+          <h4
+            class="font-bold text-dark-gray-blue tracking-wide font-hanken text-2xl mb-5"
+          >
+            Summary
+          </h4>
+
+          <div class="flex gap-[0.8rem] flex-col" id="stats-container"></div>
+          <!-- /stats-container -->
+
+          <button
+            class="button w-full rounded-full bg-dark-gray-blue py-4 mt-7 text-lg font-medium text-white"
+          >
+            Continue
+          </button>
+        </div>
+        <!-- /card-right-container -->
+      </section>
+      <!-- /card-component-container -->
+
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV/hub"
+          target="_blank"
+        >
+          Frontend Mentor
+        </a>
+        . Coded by
+        <a href="https://www.frontendmentor.io/profile/sam4web">Sam4web</a>.
+      </div>
+    </div>
+    <!-- /page-wrapper -->
+  </body>
+  <script type="module" src="./js/main.js"></script>
+</html>

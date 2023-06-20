@@ -548,11 +548,6 @@ video {
   border-radius: 1.1rem;
 }
 
-.bg-slate-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
-}
-
 .bg-slate-600{
   --tw-bg-opacity: 1;
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
@@ -566,9 +561,13 @@ video {
   text-align: center;
 }
 
-.text-light-red{
+.font-bold{
+  font-weight: 700;
+}
+
+.text-pale-blue{
   --tw-text-opacity: 1;
-  color: hsl(0 100% 67% / var(--tw-text-opacity));
+  color: hsl(221 100% 96% / var(--tw-text-opacity));
 }
 
 :root {
@@ -586,5 +585,9 @@ video {
 }
 
 .circle-bg {
-  background: linear-gradient();
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.card-gradient-bg {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }

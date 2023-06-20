@@ -5,19 +5,60 @@
 @tailwind utilities;
 
 :root {
-  --black-gradient: linear-gradient(
-    144.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  );
-  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  --card-shadow: hsl(241, 100%, 89%) 0px 8px 29px 0px;
 }
 
 * {
   scroll-behavior: smooth;
 }
 
-.circle-bg {
-  background: linear-gradient();
+.circle-gradient-bg {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.card-gradient-bg {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.card-shadow {
+  box-shadow: var(--card-shadow);
+}
+
+.bg-light-red {
+  background-color: hsla(0, 100%, 67%, 0.07) !important;
+}
+
+.bg-orangey-yellow {
+  background-color: hsla(39, 100%, 56%, 0.07) !important;
+}
+
+.bg-green-teal {
+  background-color: hsla(166, 100%, 37%, 0.07) !important;
+}
+
+.bg-cobalt-blue {
+  background-color: hsla(234, 85%, 45%, 0.07) !important;
+}
+
+.button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.attribution {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: center;
+  max-width: 420px;
+  padding: 10px 5px;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  position: fixed;
+  bottom: 30px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
