@@ -21,25 +21,25 @@ const statsData = [
     category: 'Reaction',
     color: 'light-red',
     score: 80,
-    icon: './assets/icon-reaction.svg',
+    icon: './src/assets/icon-reaction.svg',
   },
   {
     category: 'Memory',
     color: 'orangey-yellow',
     score: 92,
-    icon: './assets/icon-memory.svg',
+    icon: './src/assets/icon-memory.svg',
   },
   {
     category: 'Verbal',
     color: 'green-teal',
     score: 61,
-    icon: './assets/icon-verbal.svg',
+    icon: './src/assets/icon-verbal.svg',
   },
   {
     category: 'Visual',
     color: 'cobalt-blue',
     score: 72,
-    icon: './assets/icon-visual.svg',
+    icon: './src/assets/icon-visual.svg',
   },
 ];
 
